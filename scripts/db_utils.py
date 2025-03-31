@@ -2,6 +2,7 @@ import requests
 import os
 import sqlite3
 
+### NOTE: Include YOUR OWN EIA URL ####
 EIA_API_URL = "https://api.eia.gov/series/?api_key=YOUR_EIA_KEY&series_id=ELEC.PRICE"
 
 # Ensure "data" directory exists
