@@ -3,18 +3,20 @@ The project implements a Locational Marginal Pricing (LMP) model to estimate ele
 
 ## Project Structure
 📦 lmp_project
-┣ 📂 data/                # Contains historical and real-time LMP data
-┃ ┗ 📜 historical_prices.db  # SQLite database storing LMP records
-┣ 📂 scripts/┃ ┣ 📜 network_analysis.py    # Models power grid and transmission constraints
-┃ ┣ 📜 lmp_model.py          # Runs LMP calculations using linear programming
-┃ ┣ 📜 db_utils.py           # Stores and retrieves LMP data from SQLite
-┃ ┣ 📜 forecast_lmp.py       # Forecasts future LMP using ARIMA
-┃ ┣ 📜 api_integration.py    # Fetches real market data from PJM/EIA
-┃ ┣ 📜 visualization.py      # Plots LMP trends and forecasts
-┃ ┗ 📜 run_all.py            # Automates all steps in one script
-┣ 📜 requirements.txt        # List of dependencies
-┣ 📜 README.md               # Project documentation
-┗ 📜 .gitignore              # Ignore unnecessary files
+ ┣ 📂 data/                # Contains historical and real-time LMP data
+ ┃ ┗ 📜 historical_prices.db  # SQLite database storing LMP records
+ ┣ 📂 scripts/             
+ ┃ ┣ 📜 network_analysis.py    # Models power grid and transmission constraints
+ ┃ ┣ 📜 lmp_model.py          # Runs LMP calculations using linear programming
+ ┃ ┣ 📜 db_utils.py           # Stores and retrieves LMP data from SQLite
+ ┃ ┣ 📜 forecast_lmp.py       # Forecasts future LMP using ARIMA
+ ┃ ┣ 📜 api_integration.py    # Fetches real market data from PJM/EIA
+ ┃ ┣ 📜 visualization.py      # Plots LMP trends and forecasts
+ ┃ ┗ 📜 run_all.py            # Automates all steps in one script
+ ┣ 📜 requirements.txt        # List of dependencies
+ ┣ 📜 README.md               # Project documentation
+ ┗ 📜 .gitignore              # Ignore unnecessary files
+
 
 ## Key Features
 - **Locational Marginal Pricing (LMP) Model**: Calculates LMP based on supply, demand, and transmission constraints.
@@ -48,11 +50,11 @@ The project implements a Locational Marginal Pricing (LMP) model to estimate ele
    python scripts/run_all.py
    ```
    > This will:
-     - Model the power grid and constraints,
-     - Compute LMPs,
-     - Obtain real market data,
-     - Forecast future LMPs,
-     - Store and visualize results.
+   >  - Model the power grid and constraints,
+   >  - Compute LMPs,
+   >  - Obtain real market data,
+   >  - Forecast future LMPs,
+   >  - Store and visualize results.
 
 ## Example Output
 ```
@@ -60,9 +62,9 @@ LMPs: {'Total_Demand': 30.0, 'GenA_Capacity': -10.0, 'GenB_Capacity': 0.0}
 GenA Output: 60.0 MW, GenB Output: 20.0 MW
 ```
 > **Interpreting Results**
-  - LMP at Demand Bus = $30/MWh (Cost of supplying 1 extra MW)
-  - GenA is at max capacity (-10.0 shadow price), which means that it is not a limiting factor.
-  - GenB has an available capacity (0.0 shadow price), it is not a limiting factor.
+>  - LMP at Demand Bus = $30/MWh (Cost of supplying 1 extra MW)
+>  - GenA is at max capacity (-10.0 shadow price), which means that it is not a limiting factor.
+>  - GenB has an available capacity (0.0 shadow price), it is not a limiting factor.
 
 ## API Integration
 Obtaining EIA Historical Price Data
