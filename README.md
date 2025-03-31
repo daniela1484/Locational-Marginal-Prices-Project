@@ -3,15 +3,15 @@ The project implements a Locational Marginal Pricing (LMP) model to estimate ele
 
 ## Project Structure
 📦 lmp_project
- - 📂 data/                # Contains historical and real-time LMP data
-   - 📜 historical_prices.db  # SQLite database storing LMP records
+ - 📂 data/                (Contains historical and real-time LMP data)
+   - 📜 historical_prices.db  (SQLite database storing LMP records)
  - 📂 scripts/             
-   - 📜 network_analysis.py    # Models power grid and transmission constraints
-   - 📜 lmp_model.py          # Runs LMP calculations using linear programming
-   - 📜 db_utils.py           # Stores and retrieves LMP data from SQLite
-   - 📜 forecast_lmp.py       # Forecasts future LMP using ARIMA
-   - 📜 run_all.py            # Automates all steps in one script
- ┣ 📜 README.md               # Project documentation
+   - 📜 network_analysis.py    (Models power grid and transmission constraints)
+   - 📜 lmp_model.py          (Runs LMP calculations using linear programming)
+   - 📜 db_utils.py           (Stores and retrieves LMP data from SQLite)
+   - 📜 forecast_lmp.py       (Forecasts future LMP using ARIMA)
+   - 📜 run_all.py            (Automates all steps in one script)
+ ┣ 📜 README.md               (Project documentation)
 
 
 ## Key Features
