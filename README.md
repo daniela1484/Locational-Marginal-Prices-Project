@@ -11,6 +11,7 @@ The project implements a Locational Marginal Pricing (LMP) model to estimate ele
    - 📜 db_utils.py           (Stores and retrieves LMP data from SQLite)
    - 📜 forecast_lmp.py       (Forecasts future LMP using ARIMA)
    - 📜 run_all.py            (Automates all steps in one script)
+   - 📜 alert_script_hrly_tx.py  (Alert system for hourly demand data in Texas)
  
 
 
