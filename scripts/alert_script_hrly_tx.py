@@ -2,6 +2,9 @@ import requests
 import pandas as pd
 from datetime import datetime
 
+### This script alerts when load exceeds key thresholds or when generation data shows rapid changes. 
+### EIA API is used to pull hourly demand data for regions such as Texas.
+
 EIA_API_key = "GcdSVebgcbQ442EUDFnvdJNj39wQ3UdpDk6PkhUs" # different for each user
 region = "tx" # ERCOT
 series_id = f"ELEC.LOAD.RESID.H.TX.A" # Residential hourly load for Tx
